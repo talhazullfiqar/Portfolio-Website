@@ -17,7 +17,7 @@ A fully functional and responsive Portfolio website.
     ```
 2. Navigate to the project directory:
     ```sh
-    cd My-Portfolio
+    cd Portfolio-Website
     ```
 3. Open `index.html` in your browser to view the project.
 
