@@ -1,0 +1,352 @@
+@import url('./fontCSS/supreme.css');
+
+
+.home-container {
+    padding: 100px 0 0 0;
+
+}
+
+.text-grid,
+.image-grid {
+    margin: 0;
+    padding: 0;
+}
+
+.image-grid img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.home-section {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.home-grid text-grid {
+    margin-left: 30px;
+}
+
+.text-grid {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    margin-left: 15px;
+}
+
+.text-grid h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Supreme-Medium';
+    padding: 0;
+    margin: 0;
+}
+
+h1 span {
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+.work-container {
+    color: #e5e5e5;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.work-animation {
+    height: 45px;
+    overflow: hidden;
+    font-family: 'Supreme-Medium';
+
+}
+
+.work-animation>div>div {
+    padding: 0.25rem 0.75rem;
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+}
+
+.work-animation div:first-child {
+    animation: text-animation 8s infinite;
+}
+
+.first-work div {
+    background-color: #b988ba;
+
+}
+
+.second-work div {
+    background-color: #543f7e;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+
+    10% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: -5.62rem;
+    }
+
+    30% {
+        margin-top: -5.62rem;
+    }
+
+    40% {
+        margin-top: -11.24rem;
+    }
+
+    60% {
+        margin-top: -11.24rem;
+    }
+
+    70% {
+        margin-top: -5.62rem;
+    }
+
+    80% {
+        margin-top: -5.62rem;
+    }
+
+    90% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.Download-button {
+    font-family: 'Supreme-Medium';
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    color: white;
+    background: rgb(103, 92, 156);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.Download-button svg {
+    margin-right: 8px;
+    width: 25px;
+}
+
+.Download-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button:active {
+    box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button::before {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.Download-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    transition: all 0.2s;
+}
+
+.Download-button:hover::before,
+.Download-button:hover::after {
+    height: 60%;
+}
+
+/* Add this to your existing CSS file */
+.Loading-icon {
+    display: none;
+    /* Hidden by default */
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 3px solid white;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.fade-down {
+    animation: 1.5s fadeDown 0s normal;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -25%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fade-up {
+    animation: 1.5s fadeUp 0s normal;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 25%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fade-right {
+    animation: 1s fadeRight 0s normal;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(-30%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fade-in {
+    animation: 2s fadein 0s normal;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .home-grid .image-grid {
+        display: none;
+        overflow: hidden;
+    }
+
+    .text-grid {
+        overflow: hidden;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .text-grid h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+        font-family: 'Supreme-Medium';
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 span {
+        font-size: 6rem;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .text-grid h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        font-family: 'Supreme-Medium';
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 span {
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .work-container {
+        color: #e5e5e5;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+}

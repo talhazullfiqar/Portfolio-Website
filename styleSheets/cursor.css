@@ -1,0 +1,35 @@
+.circle {
+  --circle-size: 40px;
+  position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 2px solid white;
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.dot {
+  --dot-size: 8px;
+  position: fixed;
+  height: var(--dot-size);
+  width: var(--dot-size);
+  background-color: #7f6ed2;
+  border-radius: 50%;
+  top: calc(var(--dot-size) / 2 * -1);
+  left: calc(var(--dot-size) / 2 * -1);
+  pointer-events: none;
+  z-index: 10000;
+}
+
+@media (max-width: 414px) {
+  .circle {
+  display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+}

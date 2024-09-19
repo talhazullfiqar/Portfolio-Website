@@ -1,0 +1,91 @@
+@import url('gradients.css');
+@import url('navigation-bar.css');
+@import url('cursor.css');
+@import url('home.css');
+@import url('aboutme.css');
+@import url('fadeOnScroll.css');
+@import url('skills.css');
+@import url('portfolio.css');
+@import url('contactme.css');
+@import url('footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    cursor: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: inherit;
+    cursor: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2b2b2b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(82.3deg,
+            rgb(77, 69, 189) 20.8%,
+            #a47097 80.3%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(82.3deg,
+            #a47097 20.8%,
+            rgb(77, 69, 189) 80.3%);
+
+}
+
+.horizontal-line {
+    /* margin: 170px auto; */
+    margin: 0 auto 170px auto;
+    width: 1000px;
+    border: 0.5px solid rgba(205, 178, 212, 0.329);
+}
+
+@media (max-width: 1050px) {
+    .horizontal-line {
+        margin: 170px auto;
+        width: 700px;
+        border: 0.5px solid rgba(205, 178, 212, 0.329);
+    }
+}
+
+@media (max-width: 800px) {
+    .horizontal-line {
+        margin: 170px auto;
+        width: 400px;
+        border: 0.5px solid rgba(205, 178, 212, 0.329);
+    }
+}
+
+@media (max-width: 450px) {
+    .horizontal-line {
+        margin: 170px auto;
+        width: 200px;
+        border: 0.5px solid rgba(205, 178, 212, 0.329);
+    }
+}

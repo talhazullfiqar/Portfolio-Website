@@ -1,0 +1,41 @@
+.gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(17, 17, 17);
+    z-index: -1;
+}
+
+.blur {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.8;
+}
+
+.blur-1 {
+    background: #a287d5;
+    height: clamp(400px, 40vw, 60vw);
+    width: clamp(400px, 35vw, 70vw);
+    top: -10vh;
+    right: -5vw;
+}
+
+.blur-2 {
+    background: #e09ecf;
+    height: clamp(300px, 15vw, 46vw);
+    width: clamp(300px, 15vw, 56vw);
+    top: 5vh;
+    right: 0;
+}
+
+.blur-3 {
+    background: #7a58ba;
+    height: clamp(100px, 20vw, 20vw);
+    width: clamp(100px, 20vw, 20vw);
+    top: -1vh;
+    left: -1vw;
+}

@@ -1,0 +1,60 @@
+
+.about-fade-down { 
+    animation: 1.5s fadeDown 0s normal;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -25%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.about-fade-up {
+    animation: 1.5s fadeUp 0s normal;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 25%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.about-fade-right {
+    animation: 1s fadeRight 0s normal;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(-30%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.about-fade-in {
+    animation: 2s fadeLeft 0s normal;
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;      
+    }
+    to {
+        opacity: 1;
+    }
+}

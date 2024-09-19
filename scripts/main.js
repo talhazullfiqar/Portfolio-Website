@@ -1,0 +1,12 @@
+import gradient from "../scripts/gradient.js";
+import myCursor from "../scripts/cursor.js";
+import fadeonScroll from '../scripts/fadeonscroll.js';
+import toggleDropdown from '../scripts/dropdown.js';
+import downloadResume from '../scripts/downloadResume.js';
+import scrollnavigation from '../scripts/scroll.js';
+document.querySelector('.hamburger input').addEventListener('click', toggleDropdown);
+gradient();
+myCursor();
+fadeonScroll();
+downloadResume();
+scrollnavigation();
